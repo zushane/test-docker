@@ -1,8 +1,8 @@
 #!groovy
 
 pipeline {
-//	agent { docker { image 'centos:7' }  }
-	agent any 
+	agent { docker { image 'centos:7' }  }
+//	agent any 
 
 	stages {
 		stage ( 'test' ) {
