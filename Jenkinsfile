@@ -2,7 +2,7 @@
 
 pipeline {
 //	agent { docker { image 'centos:7' }  }
-	agent { any }
+	agent any 
 
 	stages {
 		stage ( 'test' ) {
