@@ -9,6 +9,9 @@ pipeline {
 	stages {
 		stage ( 'env' ) {
 			agent any
+			steps {
+				sh 'env'
+			}
 		}
 		stage ( 'test' ) {
 			steps {
