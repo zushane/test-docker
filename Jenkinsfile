@@ -2,13 +2,14 @@
 
 pipeline {
 	agent { 
-		docker { 
-			image 'centos:7' 
-		}  
+		docker 'centos:7'  
 	}
 //	agent any 
 
 	stages {
+		stage ( 'env' ) {
+
+		}
 		stage ( 'test' ) {
 			steps {
 				echo 'Hello, world!'	
