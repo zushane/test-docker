@@ -3,7 +3,7 @@
 pipeline {
 	agent { 
 		docker { 
-			label 'Default'
+			label 'docker'
 			image 'centos:7' 
 		}  
 	}
