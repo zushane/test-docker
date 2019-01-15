@@ -8,7 +8,7 @@ pipeline {
 
 	stages {
 		stage ( 'env' ) {
-
+			agent any
 		}
 		stage ( 'test' ) {
 			steps {
