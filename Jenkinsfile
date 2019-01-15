@@ -1,9 +1,6 @@
 #!groovy
 
 pipeline {
-	agent { 
-		docker 'centos:7'  
-	}
 //	agent any 
 
 	stages {
@@ -14,6 +11,9 @@ pipeline {
 			}
 		}
 		stage ( 'test' ) {
+			agent { 
+				docker 'centos:7'  
+			}
 			steps {
 				echo 'Hello, world!'	
 			}
